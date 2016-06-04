@@ -1,0 +1,27 @@
+#
+#   Write code that prints
+#       - Hello if  1 is stored in  spam
+#       - Howdy if  2 is
+#       - Greetings! if anything else is stored in  spam.
+#
+
+import sys
+
+while True:
+    print ('Input a value for spam: ')
+    spam = int(input())
+    if spam == 1:
+        print ('Hello')
+    elif spam == 2:
+        print ('Howdy')
+    else :
+        print ('Greetings!')
+
+    print ('Enter another value? (y/n): ')
+    value = input()
+    if value == 'yes':
+        continue
+    else :
+        sys.exit()
+
+        
